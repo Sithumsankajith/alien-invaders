@@ -155,7 +155,8 @@ function update() {
 
 function moveShip(e) {
     if (gameOver) {
-        return;
+    window.location.reload();
+
     }
 
     if (e.code == "ArrowLeft" && ship.x - shipVelocityX >= 0) {
